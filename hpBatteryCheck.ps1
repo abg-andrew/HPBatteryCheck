@@ -73,7 +73,7 @@ function Get-Downloader {
 $url = "https://batteryprogram687.ext.hp.com/Utility/HP.BRCU.Installer.msi"
 
 Write-Host "Downloading Software"
-#Download-File $url $file
+Download-File $url $file
 $arguments = "/i $file /q"
 Write-Host "Installing MSI..."
 Start-Process -Wait msiexec -ArgumentList $arguments
