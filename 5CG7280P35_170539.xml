@@ -1,0 +1,23 @@
+<HPNotebookBatteryValidationUtility>
+  <SystemInfo>
+    <ProductName>HP ProBook 650 G3</ProductName>
+    <ProductSerialNumber>5CG7280P35</ProductSerialNumber>
+    <ProductNumber>1CR64PA#ABG</ProductNumber>
+    <NumBatteriesDetected>1</NumBatteriesDetected>
+    <DateChecked>21/02/2018 5:05:39 PM</DateChecked>
+    <PrimaryBatteryCTNumber>6FWBHN3GW77FS6</PrimaryBatteryCTNumber>
+    <PrimaryBatterySerialNumber>39949 2017/05/06</PrimaryBatterySerialNumber>
+    <PrimaryBatteryRecallStatus>No recall needed</PrimaryBatteryRecallStatus>
+    <PrimaryBatteryReplacementUrl>
+    </PrimaryBatteryReplacementUrl>
+    <PrimaryBatteryProgramEndDate>
+    </PrimaryBatteryProgramEndDate>
+    <SecondaryBatteryCTNumber>No Battery Detected</SecondaryBatteryCTNumber>
+    <SecondaryBatterySerialNumber>Not Detected</SecondaryBatterySerialNumber>
+    <SecondaryBatteryRecallStatus>Unknown or Invalid</SecondaryBatteryRecallStatus>
+    <SecondaryBatteryReplacementUrl>
+    </SecondaryBatteryReplacementUrl>
+    <SecondaryBatteryProgramEndDate>
+    </SecondaryBatteryProgramEndDate>
+  </SystemInfo>
+</HPNotebookBatteryValidationUtility>
