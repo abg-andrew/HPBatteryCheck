@@ -1,0 +1,14 @@
+<HPNotebookBatteryValidationUtility-Errorlogger>
+  <SetLanguageDictionary>
+    <ErrorMessage>Cannot locate resource 'resources/localemessages/stringresources.en-au.xaml'.</ErrorMessage>
+    <Errorcode>0x80131620</Errorcode>
+    <Stack>   at MS.Internal.AppModel.ResourcePart.GetStreamCore(FileMode mode, FileAccess access)
+   at System.IO.Packaging.PackagePart.GetStream(FileMode mode, FileAccess access)
+   at System.IO.Packaging.PackWebResponse.CachedResponse.GetResponseStream()
+   at System.IO.Packaging.PackWebResponse.get_ContentType()
+   at MS.Internal.WpfWebRequestHelper.GetContentType(WebResponse response)
+   at MS.Internal.WpfWebRequestHelper.GetResponseStream(WebRequest request, ContentType&amp; contentType)
+   at System.Windows.ResourceDictionary.set_Source(Uri value)
+   at HP.BRCU.LocaleMessages.SetLanguageDictionary()</Stack>
+  </SetLanguageDictionary>
+</HPNotebookBatteryValidationUtility-Errorlogger>

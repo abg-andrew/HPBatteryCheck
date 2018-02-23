@@ -71,7 +71,7 @@ function Get-Downloader {
         }
 
 $url = "https://batteryprogram687.ext.hp.com/Utility/HP.BRCU.Installer.msi"
-$installedBCUPath = "$env:ProgramW6432\Hewlett-Packard\HP Battery Recall Utility\HPBRCU.exe"
+$installedBCUPath = ${env:ProgramFiles(x86)} + "\Hewlett-Packard\HP Battery Recall Utility\HPBRCU.exe"
 
 Write-Output "Downloading Software"
 Download-File $url $file
@@ -81,7 +81,8 @@ Start-Process -Wait msiexec -ArgumentList $arguments
 Write-Output "MSI Installed"
 Write-Output "Running Check..."
 Start-Process -Wait -FilePath $installedBCUPath -ArgumentList "-s"
-$result = [xml] (Get-Content .\*.xml)
+$xmlFiles = Get-ChildItem *.xml
+$result = [xml] (Get-Content $xmlFiles[0])
 
 Write-Output $result.HPNotebookBatteryValidationUtility.SystemInfo.PrimaryBatteryRecallStatus
 Write-Output $result.HPNotebookBatteryValidationUtility.SystemInfo.SecondaryBatteryRecallStatus
