@@ -80,7 +80,7 @@ Write-Output "Installing MSI..."
 Start-Process -Wait msiexec -ArgumentList $arguments
 Write-Output "MSI Installed"
 Write-Output "Running Check..."
-Start-Process -Wait $installedBCUPath
+Start-Process -Wait -FilePath $installedBCUPath -ArgumentList "-s"
 $result = [xml] (Get-Content .\*.xml)
 
 Write-Output $result.HPNotebookBatteryValidationUtility.SystemInfo.PrimaryBatteryRecallStatus
