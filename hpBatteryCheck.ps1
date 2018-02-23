@@ -74,7 +74,7 @@ $url = "https://batteryprogram687.ext.hp.com/Utility/HP.BRCU.Installer.msi"
 $installedBCUPath = "$env:ProgramW6432\Hewlett-Packard\HP Battery Recall Utility\HPBRCU.exe"
 
 Write-Output "Downloading Software"
-gitDownload-File $url $file
+Download-File $url $file
 $arguments = "/i $file /q"
 Write-Output "Installing MSI..."
 Start-Process -Wait msiexec -ArgumentList $arguments
